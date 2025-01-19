@@ -1,4 +1,4 @@
-# LLM-PLUGIN-EDITCODE (WIP)
+# LLM-EDITCODE (WIP)
 
 > An [llm](https://llm.datasette.io/en/stable/) plugin for editing code files.
 
