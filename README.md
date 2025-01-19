@@ -8,7 +8,7 @@
 llm install llm-editcode
 ```
 
-### Usage
+## Usage
 
 ```
 llm editcode -f README.md "improve the formatting"
