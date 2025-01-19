@@ -2,13 +2,13 @@
 
 > An [llm](https://llm.datasette.io/en/stable/) plugin for editing code files.
 
-## Install
+## Install:
 
 ```
 llm install llm-editcode
 ```
 
-## Usage
+## Usage:
 
 ```
 llm editcode -f README.md "improve the formatting"
