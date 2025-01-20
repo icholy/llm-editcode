@@ -11,14 +11,14 @@ from llm_editcode import find_sublist_index, extract, apply, Edit
         [Edit(search="x", replace="y")]
     ),
     (
-        """
-        <SEARCH>
-        print("hello")
-        </SEARCH>
-        <REPLACE>
-        print("hello", end="")
-        </REPLACE>
-        """,
+        "\n".join([
+            "<SEARCH>"
+            "print(\"hello\")",
+            "</SEARCH>",
+            "<REPLACE>",
+            "print(\"hello\", end=\"\")",
+            "</REPLACE>"
+        ]),
         [
             Edit(search="print(\"hello\")", replace="print(\"hello\", end=\"\")")
         ]

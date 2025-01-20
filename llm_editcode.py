@@ -150,7 +150,9 @@ def extract(s):
     pattern = re.compile(r"<SEARCH>(.*?)</SEARCH>\s*<REPLACE>(.*?)</REPLACE>", re.DOTALL)
     matches = pattern.findall(s)
     for search, replace in matches:
-        edits.append(Edit(search.strip(), replace.strip()))
+        search = search.strip('\n')
+        replace = replace.strip('\n')
+        edits.append(Edit(search, replace))
     return edits
 
 def apply(s, edits):
